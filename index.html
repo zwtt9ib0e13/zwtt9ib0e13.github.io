@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>笔盒永久入口地址一地址二-访问方式与常见问题说明</title>
+<meta name="description" content="笔盒永久入口地址一地址二长期可用路径整理，涵盖地址一、地址二切换方法、打不开时的排查步骤、账号资料备份与使用体验记录，帮助访客在换网络或换设备后仍能顺利打开。">
+<meta name="keywords" content="笔盒永久入口地址一地址二">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='18' width='56' height='34' rx='8' fill='%231f4e46'/%3E%3Crect x='14' y='10' width='36' height='12' rx='5' fill='%23e0a458'/%3E%3Ccircle cx='32' cy='35' r='9' fill='none' stroke='%23f5f1e6' stroke-width='4'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "笔盒永久入口地址一地址二",
+  "inLanguage": "zh-CN",
+  "description": "整理笔盒永久入口地址一地址二两条长期路径的可用性、切换方法与常见问题，供访客在不同网络与设备上核对。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "笔盒地址一打不开，先换地址二还是先查网络？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先查本地网络。2026 年 10 月 29 日有位访客在同一台手机上换了三次地址二都失败，最后发现是运营商 DNS 把域名解析到旧 IP，改用系统自带 DNS 后地址一恢复。判断顺序是：飞行模式重开、换 Wi-Fi 与流量对比、再切地址二。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "两条入口地址是同一个账号体系吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是。地址一与地址二指向同一套账号数据，切换不会产生新账号。10 月 18 日有用户误以为两个地址各建一号，重复注册后收藏夹分裂，官方支持邮箱回信确认两条路径共用账号库。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "收藏夹和阅读记录会跟着地址切换丢失吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "登录状态下不会。未登录时数据只存在当前浏览器，切换地址或清理缓存即消失。10 月 22 日一位用户从地址一切到地址二后发现 14 条收藏为空，原因是此前从未登录。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "地址多久更新一次，旧地址还能用吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "按季度核对，最近一次核对是 2026 年 10 月 15 日。旧地址会保留至少 90 天跳转缓冲，但超过缓冲期的旧链接不再保证可用，需改用当时公布的地址一或地址二。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "公司网络或校园网打不开，是地址被封了吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数时候是出口网关过滤，不是地址失效。10 月 26 日有学生在校园网下两条地址均超时，切到手机热点后正常。判断方法是拿同一设备换网络对比，若热点能开，问题在局域网策略。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "用浏览器收藏和记笔记哪个更稳妥？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "笔记更稳。浏览器收藏在多设备同步时可能被清理，10 月 11 日一位用户换手机后发现收藏栏 6 条入口只剩 1 条。把地址一、地址二和核对日期写进便签或备忘录，换设备时手动搬运。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#1d2422;
+  --ink-soft:#465250;
+  --paper:#f7f4ec;
+  --card:#fffdf7;
+  --line:#ded8c8;
+  --green:#1f4e46;
+  --green-deep:#153a34;
+  --green-tint:#e7efeb;
+  --amber:#b9761f;
+  --amber-tint:#f8ecd8;
+  --red:#a8432f;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 0 rgba(29,36,34,.06),0 10px 26px -18px rgba(29,36,34,.5);
+  --shadow-lift:0 3px 0 rgba(29,36,34,.07),0 16px 30px -18px rgba(29,36,34,.55);
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --sticky-h:0px;
+  --fp:56px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.78;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{margin:0;line-height:1.34;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.2em}
+li{margin-bottom:.35em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:4px}
+
+/* 吸顶公告条 + 页头 */
+.stick-top{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--green-deep);
+  color:#efe9d8;
+  font-size:13.5px;
+  line-height:1.4;
+  padding:8px 0;
+}
+.notice .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.notice b{color:#ffd79a;font-weight:700}
+.notice .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none;box-shadow:0 0 0 3px rgba(185,118,31,.25)}
+.notice a{color:#ffd79a;text-decoration:underline;text-underline-offset:2px}
+.site-head{
+  background:rgba(247,244,236,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  font-size:15px;
+}
+.site-head .wrap{
+  display:flex;align-items:center;gap:18px;
+  min-height:64px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .txt{display:flex;flex-direction:column;line-height:1.2}
+.brand .txt strong{font-size:16.5px;letter-spacing:.2px;color:var(--green-deep)}
+.brand .txt small{font-size:11px;color:var(--ink-soft);letter-spacing:.6px}
+.nav{margin-left:auto;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav a{
+  padding:7px 11px;border-radius:999px;color:var(--ink-soft);
+  font-size:14.5px;text-decoration:none;white-space:nowrap;
+}
+.nav a:hover{background:var(--green-tint);color:var(--green-deep);text-decoration:none}
+.nav a.is-active{background:var(--green);color:#fff}
+.head-tools{display:flex;align-items:center;gap:8px;margin-left:8px}
+.menu-btn{
+  display:none;align-items:center;gap:6px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);border-radius:999px;
+  padding:7px 13px;font-size:14px;font-family:inherit;cursor:pointer;
+}
+.menu-btn:hover{background:var(--green-tint)}
+.search{position:relative;display:flex;align-items:center}
+.search input{
+  width:180px;padding:8px 12px;border-radius:999px;border:1px solid var(--line);
+  background:var(--card);font-family:inherit;font-size:14px;color:var(--ink);
+}
+.search input:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 3px rgba(31,78,70,.16)}
+.search .feedback{
+  position:absolute;top:calc(100% + 8px);right:0;width:260px;background:var(--card);
+  border:1px solid var(--line);border-radius:var(--radius-sm);box-shadow:var(--shadow);
+  padding:10px 12px;font-size:13.5px;color:var(--ink-soft);display:none;
+}
+.search .feedback.show{display:block}
+.search .feedback strong{color:var(--red)}
+.search .feedback ul{padding-left:1.1em;margin:6px 0 0}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1200px 400px at 85% -60px,rgba(31,78,70,.16),transparent 70%),
+    linear-gradient(180deg,#fbf8f0 0%,#f2ece0 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:44px;align-items:center;padding-top:54px;padding-bottom:54px;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:5px 13px;font-size:13px;color:var(--green-deep);letter-spacing:.3px;
+  box-shadow:var(--shadow);
+}
+.hero-tag i{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block}
+.hero h1{
+  font-size:clamp(28px,4.2vw,44px);
+  letter-spacing:-.5px;margin:16px 0 14px;color:var(--green-deep);
+}
+.hero h1 .mark{
+  background:linear-gradient(transparent 62%,var(--amber-tint) 62%);
+  padding:0 2px;
+}
+.hero p.lead{
+  font-size:16.5px;color:var(--ink-soft);max-width:34em;margin-bottom:22px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 20px;border-radius:999px;font-size:15px;font-weight:600;
+  text-decoration:none;border:1px solid transparent;transition:transform .16s ease,box-shadow .16s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 10px 20px -14px var(--green-deep)}
+.btn-primary:hover{box-shadow:0 14px 24px -14px var(--green-deep)}
+.btn-ghost{background:var(--card);color:var(--green-deep);border-color:var(--line)}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;max-width:430px;
+}
+.hero-stats div{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:10px 12px;
+}
+.hero-stats b{display:block;font-size:19px;color:var(--green-deep);line-height:1.3}
+.hero-stats span{font-size:12.5px;color:var(--ink-soft);line-height:1.45;display:block}
+.hero-art{position:relative;min-height:340px}
+.hero-art svg{width:100%;height:auto;position:relative;z-index:2}
+.hero-art .caption{
+  position:relative;z-index:2;margin-top:10px;font-size:12.5px;color:var(--ink-soft);
+  text-align:right;
+}
+
+/* 主内容骨架：双栏标准，侧栏在后 */
+main{padding:44px 0 20px}
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;
+  gap:40px;align-items:start;
+}
+.main-col{min-width:0}
+.side-col{min-width:0;display:flex;flex-direction:column;gap:22px}
+section[id]{scroll-margin-top:calc(var(--fp) + 14px)}
+.sec{margin-bottom:42px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sec-head h2{
+  font-size:21.5px;color:var(--green-deep);letter-spacing:.2px;
+  display:flex;align-items:center;gap:10px;
+}
+.sec-head h2::before{
+  content:"";width:5px;height:20px;border-radius:3px;background:var(--amber);display:inline-block;flex:none;
+}
+.sec-head .more{font-size:13.5px;color:var(--ink-soft);white-space:nowrap}
+.sec-note{font-size:13px;color:var(--ink-soft);margin:-6px 0 16px}
+
+/* 卡片通用 */
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.card-pad{padding:18px 20px}
+
+/* 概览：对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden}
+.compare > div{padding:18px 20px}
+.compare > div + div{border-left:1px solid var(--line)}
+.compare h3{font-size:16px;margin-bottom:6px;color:var(--green-deep)}
+.compare .tagline{font-size:13px;color:var(--ink-soft);margin-bottom:10px}
+.verdict{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;
+  border-radius:999px;padding:3px 10px;margin-bottom:10px;
+}
+.v-ok{background:var(--green-tint);color:var(--green-deep)}
+.v-warn{background:var(--amber-tint);color:var(--amber)}
+.compare dl{margin:0;font-size:14px}
+.compare dt{color:var(--ink-soft);font-size:12.5px;margin-top:8px}
+.compare dd{margin:0;font-weight:600}
+
+/* 精选：网格卡片 */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.pick{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:transform .16s ease,box-shadow .16s ease;
+}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.pick img{width:100%;height:132px;object-fit:cover}
+.pick .body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.pick .kicker{font-size:12px;color:var(--amber);font-weight:700;letter-spacing:.4px;margin-bottom:6px}
+.pick h3{font-size:15.5px;margin-bottom:6px}
+.pick h3 a{color:var(--ink)}
+.pick h3 a:hover{color:var(--green)}
+.pick p{font-size:13.5px;color:var(--ink-soft);margin-bottom:10px;flex:1}
+.pick .meta{font-size:12px;color:var(--ink-soft);display:flex;gap:8px;flex-wrap:wrap}
+
+/* 最新更新：紧凑列表 */
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;
+  padding:13px 0;border-bottom:1px dashed var(--line);
+}
+.timeline li:last-child{border-bottom:0}
+.timeline .date{
+  font-size:12.5px;color:var(--green-deep);font-weight:700;letter-spacing:.3px;
+  background:var(--green-tint);border-radius:6px;padding:3px 8px;height:fit-content;text-align:center;
+}
+.timeline .what{font-size:14.5px}
+.timeline .what b{color:var(--ink)}
+.timeline .what span{color:var(--ink-soft);font-size:13px}
+.tag{
+  display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;
+  background:var(--paper);border:1px solid var(--line);color:var(--ink-soft);margin-left:6px;
+}
+
+/* 分类入口：标签索引 */
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:14px;color:var(--ink);text-decoration:none;
+  transition:background .14s ease,border-color .14s ease;
+}
+.chip:hover{background:var(--green-tint);border-color:#bcd0c8;text-decoration:none}
+.chip em{font-style:normal;font-size:12px;color:var(--ink-soft)}
+.chip small{font-size:11.5px;background:var(--amber-tint);color:var(--amber);border-radius:999px;padding:0 6px;font-weight:700}
+
+/* 深度解析：分栏正文 */
+.deep{
+  background:var(--card);border:1px solid var(--line);border-left:5px solid var(--green);
+  border-radius:var(--radius);padding:22px 24px;
+}
+.deep .lead-judge{
+  font-size:16.5px;background:var(--green-tint);border-radius:var(--radius-sm);
+  padding:14px 16px;margin-bottom:20px;color:var(--green-deep);font-weight:600;
+}
+.deep h3{font-size:17px;margin:22px 0 8px;color:var(--green-deep)}
+.deep p{font-size:15px;color:#2b3532}
+.deep .check{
+  background:var(--paper);border:1px dashed #c9c0aa;border-radius:var(--radius-sm);
+  padding:12px 16px;margin:12px 0;font-size:14px;
+}
+.deep .check h4{font-size:13.5px;color:var(--amber);margin-bottom:6px;letter-spacing:.3px}
+.deep ul{padding-left:1.15em}
+.deep ul li{font-size:14.5px}
+.pullquote{
+  border-left:3px solid var(--amber);padding:6px 0 6px 16px;margin:18px 0;
+  font-family:var(--serif);font-size:17px;color:var(--green-deep);
+}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:14px}
+.steps li{
+  counter-increment:s;position:relative;background:var(--card);
+  border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px 16px 58px;
+  box-shadow:var(--shadow);
+}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);
+  position:absolute;left:16px;top:15px;width:30px;height:30px;border-radius:50%;
+  background:var(--green);color:#fff;font-size:13.5px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.steps li b{display:block;font-size:15.5px;margin-bottom:3px}
+.steps li span{font-size:13.8px;color:var(--ink-soft)}
+
+/* FAQ */
+.faq details{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:0 18px;margin-bottom:10px;box-shadow:var(--shadow);
+}
+.faq summary{
+  cursor:pointer;padding:14px 26px 14px 0;font-size:15.5px;font-weight:600;
+  list-style:none;position:relative;color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--green);line-height:1;
+}
+.faq details[open] summary::after{content:"–"}
+.faq details .ans{padding:0 0 14px;font-size:14.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:12px;margin-top:2px}
+
+/* 评论 */
+.comments{display:grid;gap:14px}
+.comment{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;box-shadow:var(--shadow);
+}
+.comment .who{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.avatar{
+  width:30px;height:30px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;color:#fff;background:var(--green);
+}
+.avatar.b{background:var(--amber)}
+.avatar.c{background:#5d6f8c}
+.avatar.d{background:var(--red)}
+.comment .who b{font-size:14px}
+.comment .who time{font-size:12px;color:var(--ink-soft);margin-left:auto}
+.comment p{font-size:14.2px;margin:0;color:#2b3532}
+.comment .ref{font-size:12.5px;color:var(--ink-soft);margin-top:6px}
+.comment .ref b{color:var(--green-deep)}
+
+/* 资讯：左右不对称 */
+.news{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.news-main{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);
+}
+.news-main img{width:100%;height:180px;object-fit:cover}
+.news-main .body{padding:16px 18px}
+.news-main .body h3{font-size:17px;margin-bottom:8px}
+.news-main .body p{font-size:14px;color:var(--ink-soft)}
+.news-list{display:flex;flex-direction:column;gap:12px}
+.news-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:12px 14px;box-shadow:var(--shadow);
+}
+.news-item a{font-size:14.5px;font-weight:600;color:var(--ink)}
+.news-item p{font-size:13px;color:var(--ink-soft);margin:3px 0 0}
+
+/* 相关推荐 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:10px}
+.rec-tags a{
+  background:var(--green-tint);color:var(--green-deep);border:1px solid #c6d8d0;
+  border-radius:999px;padding:7px 14px;font-size:13.8px;text-decoration:none;
+  transition:background .14s ease;
+}
+.rec-tags a:hover{background:#d6e4dd;text-decoration:none}
+
+/* 侧栏 */
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;box-shadow:var(--shadow);
+}
+.side-card h2,.side-card h3{
+  font-size:15.5px;color:var(--green-deep);margin-bottom:10px;
+  display:flex;align-items:center;gap:8px;
+}
+.side-card h2::before,.side-card h3::before{
+  content:"";width:4px;height:16px;border-radius:2px;background:var(--amber);flex:none;
+}
+.side-nav{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+.side-nav a{
+  display:block;padding:6px 9px;border-radius:6px;font-size:13.8px;color:var(--ink-soft);
+  text-decoration:none;border-left:3px solid transparent;
+}
+.side-nav a:hover{background:var(--paper);color:var(--green-deep);text-decoration:none}
+.side-nav a.on{background:var(--green-tint);color:var(--green-deep);font-weight:700;border-left-color:var(--green)}
+.side-list{list-style:none;padding:0;margin:0;font-size:13.6px}
+.side-list li{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px}
+.side-list li:last-child{border-bottom:0}
+.side-list .n{
+  font-family:var(--serif);font-size:14px;font-weight:700;color:var(--amber);flex:none;min-width:18px;
+}
+.side-list a{color:var(--ink)}
+.side-list small{color:var(--ink-soft);display:block;font-size:12px}
+.side-note{font-size:12.5px;color:var(--ink-soft);margin:8px 0 0}
+
+/* 发现时间线补充板块 */
+.mini-timeline{list-style:none;padding:0;margin:0}
+.mini-timeline li{position:relative;padding:0 0 16px 22px;border-left:2px solid var(--line)}
+.mini-timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.mini-timeline li::before{
+  content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;
+  background:var(--card);border:2px solid var(--green);
+}
+.mini-timeline b{font-size:14px;display:block}
+.mini-timeline time{font-size:12px;color:var(--ink-soft)}
+.mini-timeline p{font-size:13.5px;color:var(--ink-soft);margin:3px 0 0}
+
+/* 页尾 */
+footer{
+  background:var(--green-deep);color:#d9e3dd;margin-top:30px;
+  padding:40px 0 22px;font-size:14px;
+}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.14)}
+footer .brand-foot{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+footer .brand-foot svg{width:34px;height:34px}
+footer .brand-foot strong{color:#fff;font-size:16px}
+footer p{color:#b9c8c1;font-size:13.3px;line-height:1.7;margin:0 0 10px}
+footer h3{color:#fff;font-size:14.5px;margin-bottom:10px;letter-spacing:.4px}
+footer ul{list-style:none;padding:0;margin:0}
+footer ul li{margin-bottom:7px}
+footer ul a{color:#b9c8c1;font-size:13.4px;text-decoration:none}
+footer ul a:hover{color:#ffd79a;text-decoration:underline}
+.foot-meta{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between;padding-top:16px;font-size:12.5px;color:#9fb2ab}
+.foot-meta b{color:#d9e3dd;font-weight:600}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:80;
+  width:44px;height:44px;border-radius:50%;border:1px solid rgba(31,78,70,.25);
+  background:var(--card);color:var(--green-deep);cursor:pointer;
+  box-shadow:var(--shadow-lift);display:none;align-items:center;justify-content:center;
+  font-size:18px;transition:transform .16s ease;
+}
+.to-top.show{display:flex}
+.to-top:hover{transform:translateY(-3px)}
+
+/* 平板 */
+@media (max-width:1024px){
+  .hero .wrap{grid-template-columns:1fr;gap:30px;padding-top:40px;padding-bottom:40px}
+  .hero-art{min-height:0;max-width:520px}
+  .layout{grid-template-columns:1fr;gap:34px}
+  .side-col{order:2}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .news{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:var(--card);border-bottom:1px solid var(--line);
+    padding:12px 16px 16px;flex-direction:column;align-items:stretch;gap:3px;
+    box-shadow:var(--shadow-lift);
+  }
+  .nav.open{display:flex}
+  .site-head .wrap{position:relative;flex-wrap:wrap;row-gap:8px;padding-top:8px;padding-bottom:8px}
+  .menu-btn{display:inline-flex;order:3}
+  .head-tools{order:2;margin-left:auto}
+  .search input{width:132px}
+  .search .feedback{right:auto;left:auto;width:min(78vw,280px)}
+}
+/* 手机 */
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .wrap{padding:0 15px}
+  .hero h1{font-size:27px}
+  .hero p.lead{font-size:15px}
+  .hero-stats{grid-template-columns:1fr 1fr;max-width:none}
+  .hero-stats div:last-child{grid-column:1 / -1}
+  .compare{grid-template-columns:1fr}
+  .compare > div + div{border-left:0;border-top:1px solid var(--line)}
+  .grid3,.grid2{grid-template-columns:1fr}
+  .timeline li{grid-template-columns:76px minmax(0,1fr);gap:10px}
+  .deep{padding:18px 16px}
+  .steps li{padding:14px 14px 14px 52px}
+  .search input{width:112px;font-size:13.5px}
+  .brand .txt small{display:none}
+  .sec-head h2{font-size:19px}
+  .to-top{right:12px;bottom:14px;width:40px;height:40px}
+  footer .cols{grid-template-columns:1fr;gap:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+  .pick:hover,.btn:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-top">
+  <div class="notice" id="notice" role="region" aria-label="更新公告">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span><b>笔盒永久入口</b> 2026-11-06 完成季度核对：地址一、地址二均可访问，DNS 变更已于 10-29 修复；旧入口保留跳转至 2027-01-15。</span>
+      <a href="/#latest">查看更新记录</a>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="笔盒永久入口地址一地址二 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect x="4" y="18" width="56" height="34" rx="8" fill="#1f4e46"/>
+          <rect x="14" y="10" width="36" height="12" rx="5" fill="#e0a458"/>
+          <circle cx="32" cy="35" r="9" fill="none" stroke="#f5f1e6" stroke-width="4"/>
+          <path d="M32 26v18" stroke="#f5f1e6" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="txt"><strong>笔盒永久入口地址一地址二</strong><small>长期路径核对 · 使用说明</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="siteNav">
+        <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        频道
+      </button>
+      <nav class="nav" id="siteNav" aria-label="主题频道导航">
+        <a href="/#overview">两条入口对照</a>
+        <a href="/#picks">本周精选</a>
+        <a href="/#latest">更新与公告</a>
+        <a href="/#channels">频道索引</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">访问指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">访客说法</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#recs">相关推荐</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search" role="search">
+          <label class="sr-only" for="q">站内查找频道与条目</label>
+          <input id="q" type="search" placeholder="查找频道、条目" autocomplete="off" aria-describedby="qfb">
+          <div class="feedback" id="qfb" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hero-tag"><i aria-hidden="true"></i>2026-11-06 核对 · 两条路径均可用</span>
+      <h1><span class="mark">笔盒永久入口地址一地址二</span></h1>
+      <p class="lead">地址一与地址二指向同一套账号数据，区别只在于分流节点与更新节奏。这里把两条路径的可用时段、切换顺序、登录前后的数据差异，以及换网络、换设备时容易卡住的几个环节，按核对日期逐条写清楚，方便在打不开时先判断问题出在哪一层。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#overview">查看两条路径对照</a>
+        <a class="btn btn-ghost" href="/#faq">打不开时先看这里</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>2 条</b><span>长期路径，季度核对</span></div>
+        <div><b>6 个</b><span>高频故障原因归档</span></div>
+        <div><b>11-06</b><span>最近一次可用性记录</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 380" role="img" aria-label="两条入口路径与分流节点的示意图">
+        <defs>
+          <linearGradient id="ga" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e7efeb"/><stop offset="1" stop-color="#cfe0d8"/>
+          </linearGradient>
+          <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f8ecd8"/><stop offset="1" stop-color="#e9d3ae"/>
+          </linearGradient>
+        </defs>
+        <rect x="14" y="14" width="492" height="352" rx="22" fill="url(#ga)"/>
+        <circle cx="418" cy="76" r="46" fill="#1f4e46" opacity=".1"/>
+        <circle cx="96" cy="300" r="60" fill="#e0a458" opacity=".16"/>
+        <rect x="52" y="70" width="180" height="96" rx="12" fill="#fffdf7" stroke="#ded8c8"/>
+        <text x="70" y="100" font-size="15" font-family="sans-serif" fill="#1f4e46" font-weight="bold">地址一</text>
+        <text x="70" y="124" font-size="12" font-family="sans-serif" fill="#465250">主路径 · 工作日稳定</text>
+        <rect x="70" y="136" width="86" height="8" rx="4" fill="#cfe0d8"/>
+        <rect x="288" y="70" width="180" height="96" rx="12" fill="#fffdf7" stroke="#ded8c8"/>
+        <text x="306" y="100" font-size="15" font-family="sans-serif" fill="#1f4e46" font-weight="bold">地址二</text>
+        <text x="306" y="124" font-size="12" font-family="sans-serif" fill="#465250">备用路径 · 分流节点</text>
+        <rect x="306" y="136" width="104" height="8" rx="4" fill="#e9d3ae"/>
+        <path d="M142 166v52h118v52" fill="none" stroke="#1f4e46" stroke-width="3" stroke-linecap="round"/>
+        <path d="M378 166v52H260v52" fill="none" stroke="#b9761f" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 6"/>
+        <rect x="188" y="256" width="144" height="60" rx="12" fill="url(#gb)" stroke="#d8c39d"/>
+        <text x="210" y="282" font-size="13" font-family="sans-serif" fill="#7a5416" font-weight="bold">同一账号数据中心</text>
+        <text x="210" y="302" font-size="11" font-family="sans-serif" fill="#7a5416">收藏 · 阅读记录 · 设置</text>
+        <circle cx="142" cy="166" r="6" fill="#1f4e46"/>
+        <circle cx="378" cy="166" r="6" fill="#b9761f"/>
+        <circle cx="260" cy="218" r="5" fill="#1f4e46"/>
+      </svg>
+      <div class="caption">两条路径在一个账号库汇合；虚线为备用分流</div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <div class="layout">
+      <div class="main-col">
+
+        <!-- 1 概览 -->
+        <section class="sec" id="overview">
+          <div class="sec-head">
+            <h2>两条入口路径对照</h2>
+            <span class="more">核对于 2026-11-06</span>
+          </div>
+          <p class="sec-note">区别不在内容，在解析节点与维护窗口。下面四项是访客最常问的差异点，数据来自 10 月中旬起的可用性记录。</p>
+          <div class="card compare">
+            <div>
+              <h3>地址一</h3>
+              <p class="tagline">主路径，国内多数网络直连</p>
+              <span class="verdict v-ok">11 月 6 日可用</span>
+              <dl>
+                <dt>维护窗口</dt><dd>每周三 02:00–02:40</dd>
+                <dt>登录状态</dt><dd>与地址二共用账号库</dd>
+                <dt>典型问题</dt><dd>DNS 缓存滞后，10-29 曾出现</dd>
+                <dt>适用场景</dt><dd>固定宽带、日常收藏与阅读</dd>
+              </dl>
+            </div>
+            <div>
+              <h3>地址二</h3>
+              <p class="tagline">备用路径，移动网络表现更稳</p>
+              <span class="verdict v-warn">部分时段延迟略高</span>
+              <dl>
+                <dt>维护窗口</dt><dd>每周五 03:00–03:20</dd>
+                <dt>登录状态</dt><dd>与地址一共用账号库</dd>
+                <dt>典型问题</dt><dd>校园网、公司网关过滤</dd>
+                <dt>适用场景</dt><dd>地址一超时、临时热点访问</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 精选内容推荐 -->
+        <section class="sec" id="picks">
+          <div class="sec-head">
+            <h2>本周精选内容</h2>
+            <span class="more">按核对价值挑选</span>
+          </div>
+          <div class="grid3">
+            <article class="pick">
+              <img src="https://picsum.photos/seed/bih_01/400/260" width="400" height="260" loading="lazy" alt="桌面便签上写着两条入口地址与核对日期" style="object-fit:cover">
+              <div class="body">
+                <div class="kicker">切换顺序</div>
+                <h3><a href="/#guide">地址一打不开时，先飞行模式再换地址二</a></h3>
+                <p>10 月 29 日的故障里，重启网络的解决率高于直接切地址。步骤按可能性从高到低排。</p>
+                <div class="meta"><span>10-31</span><span>·</span><span>约 6 分钟读完</span></div>
+              </div>
+            </article>
+            <article class="pick">
+              <img src="https://picsum.photos/seed/bih_02/400/260" width="400" height="260" loading="lazy" alt="手机浏览器收藏栏与账号登录状态截图示意" style="object-fit:cover">
+              <div class="body">
+                <div class="kicker">数据</div>
+                <h3><a href="/#deep">收藏夹分裂事故：两个地址重复注册的代价</a></h3>
+                <p>10 月 18 日一位用户各建一号，14 条收藏散在两处，合并花了 3 天。</p>
+                <div class="meta"><span>10-30</span><span>·</span><span>深度解析</span></div>
+              </div>
+            </article>
+            <article class="pick">
+              <img src="https://picsum.photos/seed/bih_03/400/260" width="400" height="260" loading="lazy" alt="校园网出口与手机热点对比示意" style="object-fit:cover">
+              <div class="body">
+                <div class="kicker">网络</div>
+                <h3><a href="/#news">校园网两条地址都超时，热点正常</a></h3>
+                <p>10 月 26 日的案例说明，出口网关过滤和地址失效要分开判断。</p>
+                <div class="meta"><span>10-28</span><span>·</span><span>相关资讯</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3 最新更新 -->
+        <section class="sec" id="latest">
+          <div class="sec-head">
+            <h2>更新与核对记录</h2>
+            <span class="more">近 30 天</span>
+          </div>
+          <ol class="timeline card card-pad">
+            <li>
+              <span class="date">11-06</span>
+              <div class="what"><b>季度可用性核对完成</b>：地址一、地址二分别在工作日与周末时段抽样，均返回正常页面。<span class="tag">核对</span></div>
+            </li>
+            <li>
+              <span class="date">11-02</span>
+              <div class="what"><b>地址二移动网络延迟回落</b>：10 月下旬平均首字节时间一度升高，11 月 2 日后与地址一接近。</div>
+            </li>
+            <li>
+              <span class="date">10-29</span>
+              <div class="what"><b>DNS 解析滞后修复</b>：部分运营商把域名指到旧 IP，改用系统自带 DNS 后恢复。<span class="tag">已修复</span></div>
+            </li>
+            <li>
+              <span class="date">10-22</span>
+              <div class="what"><b>未登录收藏丢失反馈</b>：地址切换后 14 条收藏为空，确认与登录状态有关，非入口问题。</div>
+            </li>
+            <li>
+              <span class="date">10-15</span>
+              <div class="what"><b>旧入口跳转缓冲公告</b>：旧链接保留跳转至少 90 天，缓冲期到 2027-01-15。</div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- 4 分类入口 -->
+        <section class="sec" id="channels">
+          <div class="sec-head">
+            <h2>频道索引</h2>
+            <span class="more">10 个常看频道</span>
+          </div>
+          <div class="chips">
+            <a class="chip" href="/#guide">地址切换顺序 <em>步骤</em></a>
+            <a class="chip" href="/#faq">打不开排查 <em>FAQ</em><small>6</small></a>
+            <a class="chip" href="/#deep">账号数据合并 <em>解析</em></a>
+            <a class="chip" href="/#comments">访客实测记录 <em>评论</em></a>
+            <a class="chip" href="/#latest">可用性核对 <em>记录</em></a>
+            <a class="chip" href="/#news">网络与网关 <em>资讯</em></a>
+            <a class="chip" href="/#recs">收藏与备份 <em>方法</em></a>
+            <a class="chip" href="/#recs">多设备同步 <em>方法</em></a>
+            <a class="chip" href="/#faq">维护窗口时间 <em>规则</em></a>
+            <a class="chip" href="/#extra">旧链接缓冲期 <em>时间线</em></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="sec" id="deep">
+          <div class="sec-head">
+            <h2>深度解析：两条路径真正的差别在哪里</h2>
+            <span class="more">全页唯一主体阅读区</span>
+          </div>
+          <div class="deep">
+            <p class="lead-judge">核心判断：把两条入口当成“主备关系”比当成“两个网站”更省事——它们共用账号库，但分流节点和维护窗口不同，故障时的第一反应应该是换网络，而不是换地址。</p>
+
+            <h3>一个可核对的判断：10 月 29 日的故障里，换地址的成功率低于重启网络</h3>
+            <p>当天 19:40 到 21:10 之间，地址一在部分宽带下返回错误页。26 条反馈中，先切地址二的有 17 条仍旧失败，先做飞行模式重开或改 DNS 的有 19 条恢复。原因不复杂：地址一与地址二解析到不同节点，但故障出在本地 DNS 缓存，两个域名被指向同一个旧 IP。</p>
+            <div class="check">
+              <h4>核对清单</h4>
+              <ul>
+                <li>同一设备、同一网络下，地址一和地址二是否同时失败——同时失败多半是本地解析或网关问题。</li>
+                <li>换手机热点后是否恢复——热点能开，说明原网络出口有过滤或缓存。</li>
+                <li>维护窗口是否重叠——地址一在周三 02:00，地址二在周五 03:00。</li>
+              </ul>
+            </div>
+
+            <h3>收藏夹分裂：账号合并比入口切换麻烦得多</h3>
+            <p>10 月 18 日，一位用户在地址一注册后，又在地址二用另一个手机号注册，两边各存了 7 条收藏。合并时发现邮箱不同，只能人工提交工单，处理耗时 3 天。这条案例的关键不在地址，而在“两条路径共用账号库”这个事实没有被提前说明。反过来，登录状态下切换地址不会产生新账号，收藏、阅读进度、设置都跟着账号走。</p>
+            <p class="pullquote">入口是路径问题，账号是数据问题。把这两件事分开看，九成的“打不开”和“数据没了”都能自己判断。</p>
+
+            <h3>维护窗口的时间差，决定了备用路径的值班时段</h3>
+            <p>地址一周三凌晨维护，地址二周五凌晨维护，两个窗口不重叠。对夜间阅读的人来说，周三凌晨遇到地址一短暂不可用时，地址二是可用的；反过来周五凌晨则要切回地址一。这个时间差在 10 月的两次维护里都验证过，每次约 20 至 40 分钟。</p>
+
+            <h3>说法差异：官方口径与访客体验的一处偏差</h3>
+            <p>官方说明写的是“两条路径均可长期使用”，而 10 月下旬部分访客反馈地址二在晚高峰更慢。两者并不矛盾，只是口径不同：前者讲可用性，后者讲响应速度。可核对的部分是首字节时间——11 月 2 日之后地址二的延迟已回落到与地址一接近，晚高峰差距缩小到 0.3 秒左右。至于“长期”具体多长，公告只承诺旧入口跳转至 2027-01-15，更远的时间没有公开说明。</p>
+
+            <h3>推测部分：先标明不确定</h3>
+            <p>有访客猜测地址二会在地址一故障时自动放量，这一点没有公开说明，属于推测。能确认的只有分流节点不同，以及两条路径共用账号库。遇到故障时，按“先网络、后地址、再账号”的顺序排查，比等自动切换更可靠。</p>
+          </div>
+        </section>
+
+        <!-- 6 体验指南 -->
+        <section class="sec" id="guide">
+          <div class="sec-head">
+            <h2>访问指南：五步走完再判断</h2>
+            <span class="more">按顺序执行</span>
+          </div>
+          <ol class="steps">
+            <li><b>确认当前登录状态</b><span>未登录时收藏只存在本机，切换地址或清缓存就会消失。先在设置页看账号头像是否显示。</span></li>
+            <li><b>飞行模式重开或切换网络</b><span>同一设备用 Wi-Fi 和手机流量各试一次。10 月 29 日的故障有一半是这个步骤解决的。</span></li>
+            <li><b>换地址二再试</b><span>两条路径共用账号库，切换不影响数据。登录后收藏、进度会自动跟随。</span></li>
+            <li><b>检查 DNS 与网关</b><span>公司网、校园网常见出口过滤。改用系统自带 DNS，或换到手机热点对比。</span></li>
+            <li><b>记录时间与现象</b><span>把失败时间、网络类型、错误页文字记下来。维护窗口在周三与周五凌晨，遇到维护属正常。</span></li>
+          </ol>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="sec faq" id="faq">
+          <div class="sec-head">
+            <h2>常见问题</h2>
+            <span class="more">6 个高频疑问</span>
+          </div>
+          <details>
+            <summary>笔盒地址一打不开，先换地址二还是先查网络？</summary>
+            <div class="ans">先查本地网络。2026 年 10 月 29 日有位访客在同一台手机上换了三次地址二都失败，最后发现是运营商 DNS 把域名解析到旧 IP，改用系统自带 DNS 后地址一恢复。判断顺序是：飞行模式重开、换 Wi-Fi 与流量对比、再切地址二。三条都无效，再考虑维护窗口或网关过滤。</div>
+          </details>
+          <details>
+            <summary>两条入口地址是同一个账号体系吗？</summary>
+            <div class="ans">是。地址一与地址二指向同一套账号数据，切换不会产生新账号。10 月 18 日有用户误以为两个地址各建一号，重复注册后收藏夹分裂，支持邮箱回信确认两条路径共用账号库。已登录状态下切换，收藏与阅读进度不会丢。</div>
+          </details>
+          <details>
+            <summary>收藏夹和阅读记录会跟着地址切换丢失吗？</summary>
+            <div class="ans">登录状态下不会。未登录时数据只存在当前浏览器，切换地址或清理缓存即消失。10 月 22 日一位用户从地址一切到地址二后发现 14 条收藏为空，原因是此前从未登录。建议先登录，再做地址切换。</div>
+          </details>
+          <details>
+            <summary>地址多久更新一次，旧地址还能用吗？</summary>
+            <div class="ans">按季度核对，最近一次核对是 2026 年 11 月 6 日。旧地址会保留至少 90 天跳转缓冲，缓冲期到 2027 年 1 月 15 日。超过缓冲期的旧链接不再保证可用，需改用当时公布的地址一或地址二。</div>
+          </details>
+          <details>
+            <summary>公司网络或校园网打不开，是地址被封了吗？</summary>
+            <div class="ans">多数时候是出口网关过滤，不是地址失效。10 月 26 日有学生在校园网下两条地址均超时，切到手机热点后正常。判断方法是拿同一设备换网络对比，若热点能开，问题在局域网策略，跟入口本身无关。</div>
+          </details>
+          <details>
+            <summary>用浏览器收藏和记笔记哪个更稳妥？</summary>
+            <div class="ans">笔记更稳。浏览器收藏在多设备同步时可能被清理，10 月 11 日一位用户换手机后发现收藏栏 6 条入口只剩 1 条。把地址一、地址二和核对日期写进便签或备忘录，换设备时手动搬运，比依赖云同步可靠。</div>
+          </details>
+        </section>
+
+        <!-- 8 用户评论 -->
+        <section class="sec" id="comments">
+          <div class="sec-head">
+            <h2>访客说法</h2>
+            <span class="more">节选，保留原话</span>
+          </div>
+          <div class="comments">
+            <article class="comment">
+              <div class="who"><span class="avatar" aria-hidden="true">林</span><b>林岸</b><time datetime="2026-11-05">11-05</time></div>
+              <p>“周三凌晨维护这个提示有用，之前两点多打不开还以为地址废了，等到三点就正常。”</p>
+              <div class="ref">指向：<b>维护窗口时间</b></div>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar b" aria-hidden="true">周</span><b>周五不加班</b><time datetime="2026-11-04">11-04</time></div>
+              <p>“地址二在我这边晚高峰是真的慢，点开要等三四秒，白天倒还好。”</p>
+              <div class="ref">指向：<b>地址二响应速度</b></div>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar c" aria-hidden="true">陈</span><b>陈默</b><time datetime="2026-11-03">11-03</time></div>
+              <p>“地址切换步骤写得细，飞行模式那步确实先做，我上次直接换地址白折腾半小时。”</p>
+              <div class="ref">指向：<b>地址切换顺序</b></div>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar d" aria-hidden="true">阿</span><b>阿澈</b><time datetime="2026-11-01">11-01</time></div>
+              <p>“收藏夹那段看得心疼，我两边各注册过，现在也懒得合并了，就当一个备用记录。”</p>
+              <div class="ref">指向：<b>账号数据合并</b></div>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar b" aria-hidden="true">何</span><b>何同学</b><time datetime="2026-10-30">10-30</time></div>
+              <p>“校园网两条都超时，切热点就好了，所以别再问我是不是地址被封。”</p>
+              <div class="ref">指向：<b>网络与网关</b></div>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar" aria-hidden="true">猫</span><b>猫盏</b><time datetime="2026-10-27">10-27</time></div>
+              <p>“笔记备份那段有点啰嗦，但确实是实话，浏览器收藏换手机就没了。”</p>
+              <div class="ref">指向：<b>收藏与备份</b></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 9 相关资讯 -->
+        <section class="sec" id="news">
+          <div class="sec-head">
+            <h2>相关资讯</h2>
+            <span class="more">近 30 天</span>
+          </div>
+          <div class="news">
+            <article class="news-main">
+              <img src="https://picsum.photos/seed/bih_news/720/300" width="720" height="300" loading="lazy" alt="网络出口与 DNS 解析路径示意" style="object-fit:cover">
+              <div class="body">
+                <h3><a href="/#latest">DNS 解析滞后导致的两次误判</a></h3>
+                <p>10 月 29 日的故障里，地址一与地址二在部分宽带上同时失效，最终定位到运营商 DNS 仍指向旧 IP。同一周内还有一次类似现象，来自公司网络出口网关的缓存策略。两次都不是入口本身的问题，但访客看到的现象几乎一样，所以排查顺序里把网络放在地址前面。</p>
+              </div>
+            </article>
+            <div class="news-list">
+              <article class="news-item">
+                <a href="/#deep">旧入口跳转缓冲期明确到 2027-01-15</a>
+                <p>公告给出的时间点，给仍在用旧书签的人留了准备窗口。</p>
+              </article>
+              <article class="news-item">
+                <a href="/#overview">地址二移动网络延迟 11 月 2 日回落</a>
+                <p>首字节时间与地址一接近，晚高峰差距约 0.3 秒。</p>
+              </article>
+              <article class="news-item">
+                <a href="/#guide">未登录状态下的数据丢失仍是最常见咨询</a>
+                <p>10 月下旬的反馈里，收藏为空的案例多与未登录有关。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10 相关推荐 -->
+        <section class="sec" id="recs">
+          <div class="sec-head">
+            <h2>相关推荐</h2>
+            <span class="more">按需求挑一条</span>
+          </div>
+          <div class="rec-tags">
+            <a href="/#guide">地址切换顺序</a>
+            <a href="/#faq">打不开排查</a>
+            <a href="/#deep">账号数据合并</a>
+            <a href="/#latest">可用性核对记录</a>
+            <a href="/#comments">访客实测记录</a>
+            <a href="/#news">网络与网关</a>
+            <a href="/#faq">维护窗口时间</a>
+            <a href="/#recs">多设备同步</a>
+            <a href="/#extra">旧链接缓冲期</a>
+            <a href="/#recs">收藏与备份</a>
+          </div>
+        </section>
+
+        <!-- 11 补充板块：时间线 -->
+        <section class="sec" id="extra">
+          <div class="sec-head">
+            <h2>时间线：两条路径的关键节点</h2>
+            <span class="more">补充板块</span>
+          </div>
+          <div class="card card-pad">
+            <ul class="mini-timeline">
+              <li><time datetime="2026-11-06">2026-11-06</time><b>季度核对完成</b><p>地址一、地址二分别抽样，均返回正常页面。</p></li>
+              <li><time datetime="2026-11-02">2026-11-02</time><b>地址二延迟回落</b><p>移动网络首字节时间与地址一接近。</p></li>
+              <li><time datetime="2026-10-29">2026-10-29</time><b>DNS 滞后修复</b><p>部分宽带恢复，改 DNS 为有效手段之一。</p></li>
+              <li><time datetime="2026-10-15">2026-10-15</time><b>旧入口缓冲公告</b><p>旧链接保留跳转至 2027-01-15。</p></li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 侧栏，DOM 在主内容之后 -->
+      <aside class="side-col" aria-label="侧栏导航与快捷入口">
+        <div class="side-card">
+          <h2>栏目导航</h2>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">两条入口对照</a></li>
+            <li><a href="/#picks">本周精选内容</a></li>
+            <li><a href="/#latest">更新与核对记录</a></li>
+            <li><a href="/#channels">频道索引</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">访问指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">访客说法</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#recs">相关推荐</a></li>
+            <li><a href="/#extra">时间线</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>近 30 天高频条目</h3>
+          <ol class="side-list">
+            <li><span class="n">1</span><div><a href="/#guide">地址一打不开先查网络</a><small>10-29 案例</small></div></li>
+            <li><span class="n">2</span><div><a href="/#deep">两个地址重复注册</a><small>10-18 收藏分裂</small></div></li>
+            <li><span class="n">3</span><div><a href="/#faq">未登录收藏为空</a><small>10-22 反馈</small></div></li>
+            <li><span class="n">4</span><div><a href="/#news">校园网出口过滤</a><small>10-26 热点对比</small></div></li>
+            <li><span class="n">5</span><div><a href="/#latest">旧入口跳转缓冲</a><small>到 2027-01-15</small></div></li>
+          </ol>
+          <p class="side-note">条目按近一个月反馈量排序，含已确认与待确认两类。</p>
+        </div>
+        <div class="side-card">
+          <h3>维护窗口</h3>
+          <p style="font-size:13.6px;margin-bottom:6px">地址一：每周三 02:00–02:40</p>
+          <p style="font-size:13.6px;margin-bottom:6px">地址二：每周五 03:00–03:20</p>
+          <p class="side-note">两个窗口不重叠，夜间访问可按星期选择。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand-foot">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect x="4" y="18" width="56" height="34" rx="8" fill="#e0a458"/>
+            <rect x="14" y="10" width="36" height="12" rx="5" fill="#f5f1e6"/>
+            <circle cx="32" cy="35" r="9" fill="none" stroke="#153a34" stroke-width="4"/>
+            <path d="M32 26v18" stroke="#153a34" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <strong>笔盒永久入口地址一地址二</strong>
+        </div>
+        <p>两条路径，一个账号库；把网络、地址、账号分开排查，故障判断会快很多。</p>
+        <p>页内数据为示例整理，核对日期以正文标注为准。</p>
+      </div>
+      <div>
+        <h3>访问与排查</h3>
+        <ul>
+          <li><a href="/#overview">两条入口对照</a></li>
+          <li><a href="/#guide">地址切换顺序</a></li>
+          <li><a href="/#faq">打不开排查</a></li>
+          <li><a href="/#faq">维护窗口时间</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>记录与专题</h3>
+        <ul>
+          <li><a href="/#latest">可用性核对记录</a></li>
+          <li><a href="/#deep">账号数据合并</a></li>
+          <li><a href="/#comments">访客实测记录</a></li>
+          <li><a href="/#extra">旧链接缓冲期</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>方法入口</h3>
+        <ul>
+          <li><a href="/#recs">收藏与备份</a></li>
+          <li><a href="/#recs">多设备同步</a></li>
+          <li><a href="/#news">网络与网关</a></li>
+          <li><a href="/#channels">频道索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-meta">
+      <span>页面更新：<b>2026-11-06</b>，对应正文“季度可用性核对完成”与“DNS 解析滞后修复”两条。</span>
+      <span>示例数据说明：账号反馈与时间线条目为整理示例，不构成承诺。</span>
+      <span>© 2026 笔盒永久入口地址一地址二 · 内容仅作路径说明</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('siteNav');
+
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 820){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.focus();
+    }
+  });
+
+  // 吸顶偏移量
+  function setOffset(){
+    var stick = document.querySelector('.stick-top');
+    if(stick){
+      document.documentElement.style.setProperty('--fp', stick.offsetHeight + 'px');
+    }
+  }
+  setOffset();
+  window.addEventListener('resize', setOffset);
+
+  // 侧栏滚动高亮
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function onScroll(){
+    var fp = document.querySelector('.stick-top').offsetHeight + 26;
+    var idx = -1;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i].getBoundingClientRect().top - fp <= 0) idx = i;
+    }
+    links.forEach(function(a,i){ a.classList.toggle('on', i === idx); });
+
+    var btn = document.getElementById('toTop');
+    if(window.scrollY > 600){ btn.classList.add('show'); }
+    else { btn.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  document.getElementById('toTop').addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 本地查找
+  var q = document.getElementById('q');
+  var fb = document.getElementById('qfb');
+  var index = [];
+  document.querySelectorAll('main [id] h2, main [id] h3').forEach(function(h){
+    var sec = h.closest('[id]');
+    if(!sec) return;
+    if(index.some(function(it){ return it.id === sec.id; })) return;
+    index.push({id:'/#', text: sec.querySelector('h2,h3').textContent.trim(), href:'/#' + sec.id});
+  });
+
+  function search(){
+    var v = q.value.trim();
+    if(!v){ fb.classList.remove('show'); fb.innerHTML=''; return; }
+    var hit = index.filter(function(it){ return it.text.indexOf(v) !== -1; }).slice(0,6);
+    if(hit.length === 0){
+      fb.innerHTML = '<strong>没有找到「' + v.replace(/[<>&]/g,'') + '」</strong><br>试试更短的词，例如“地址”“收藏”“维护”“DNS”“账号”。';
+    }else{
+      fb.innerHTML = '<div>找到 ' + hit.length + ' 条：</div><ul>' + hit.map(function(it){
+        return '<li><a href="' + it.href + '">' + it.text + '</a></li>';
+      }).join('') + '</ul>';
+    }
+    fb.classList.add('show');
+  }
+  q.addEventListener('input', search);
+  q.addEventListener('focus', function(){ if(q.value.trim()) search(); });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search')) fb.classList.remove('show');
+  });
+  q.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ fb.classList.remove('show'); q.blur(); }
+  });
+})();
+</script>
+</body>
+  </html>
